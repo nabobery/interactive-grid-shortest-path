@@ -1,0 +1,39 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 2rem);
+  grid-template-rows: repeat(20, 2rem);
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.cell {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cell.start {
+  background-color: green;
+  color: white;
+}
+
+.cell.dest {
+  background-color: red;
+  color: white;
+}
+
+.shortest-path {
+  background-color: blue;
+  color: white;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
